@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>PROGRAM CREATER SAMPLE</title>
+</head>
+<body>
+    <div class = "program">
+      <div class="pro_lang">cpp</div>
+      <div class="program_main"><pre><span class="Identifier" style="color:#569cd6;">#include</span> &lt;iostream&gt;
+<span class="Keywords" style="color:#569cd6;">using</span> <span class="Keywords" style="color:#569cd6;">namespace</span> <span class="GeneNmSpace" style="color:#569cd6;">std</span>;
+<span class="Identifier" style="color:#569cd6;">#define</span> <span class="Macro">TEST__</span> <span class="Number" style="color:#ff6a00;">123</span>
+
+<span class="Keywords" style="color:#569cd6;">enum</span> <span class="Keywords" style="color:#569cd6;">class</span> hoge{
+  enum_1 : <span class="Number" style="color:#ff6a00;">1</span>,
+  enum_2 : <span class="Number" style="color:#ff6a00;">2</span>,
+  enum_3 : <span class="Number" style="color:#ff6a00;">3</span>
+};
+
+
+<span class="Keywords" style="color:#569cd6;">struct</span> huga{
+<span class="GeneNmSpace" style="color:#569cd6;">std</span>::vector&lt;<span class="GeneNmSpace" style="color:#569cd6;">std</span>::vector&lt;<span class="Keywords" style="color:#569cd6;">int</span>&gt;&gt; vec1;
+<span class="GeneNmSpace" style="color:#569cd6;">std</span>::string str1;
+
+  <span class="Keywords" style="color:#569cd6;">int</span> test(){
+    <span class="GeneFunc" style="color:#569cd6;">printf</span>(<span class="String" style="color:#d7ba7d;">"Hello, World!!"</span>); <span class="Com_1" style="color:#32ff2e;">// This is comment</span>
+    <span class="Com_2" style="color:#19edfb;">/*  
+    Comment 1
+    Comment 2
+    Comment 3
+    */</span>
+  <span class="Keywords" style="color:#569cd6;">return</span> <span class="Number" style="color:#ff6a00;">0</span>;
+  }
+}
+
+
+<span class="Keywords" style="color:#569cd6;">int</span> main(){
+  cout &lt;&lt; <span class="String" style="color:#d7ba7d;">"Hello world."</span> &lt;&lt; endl;
+  <span class="Keywords" style="color:#569cd6;">return</span> <span class="Number" style="color:#ff6a00;">0</span>;
+}</pre></div>
+    </div>
+</body>
+
+<style type="text/css">
+    body{
+        background-color:#333;
+        color:#fff;
+    }
+    
+    .program_main{
+        overflow-y: hidden;
+        font-size:14px;
+        font-weight:normal;
+        line-height:16px;
+        margin-top:0px;
+        margin-bottom:38px;
+        border:solid 2px #fff;
+    }
+    
+   .pro_lang{
+        color:#fff;
+        background-color:#222;
+        border-top:solid 4px yellow;
+        height:20px;
+        padding:3px;
+        width:70px;
+   } 
+   
+.Number{ color:#ff6a00; }
+.Com_1{ color:#32ff2e; }
+.Com_2{ color:#19edfb; }
+.String{ color:#d7ba7d; }
+.Win32_API{ color:#d066ea; }
+.Keywords{ color:#569cd6; }
+.Identifier{ color:#aaa; }
+.GeneFunc{ color:yellow; }
+.GeneNmSpace{ color:#569cd6; }
+.Macro{ color:#ff2a7e; }
+
+
+</style>
+
+</html>

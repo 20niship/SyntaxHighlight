@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>PROGRAM CREATER SAMPLE</title>
+</head>
+<body>
+    <p>ここにHTMLファイルが表示されます</p>
+
+    <div class = "program">
+        <div class="pro_lang">cpp</div>
+
+        <input id="trigger1" class="grad-trigger" type="checkbox">
+        <label class="grad-btn" for="trigger1"></label>
+
+<div class="L_Number">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>__<br></div>
+<div class="program_main"><pre><span class="Identifier">#include</span> &lt;iostream&gt;
+<span class="Keywords">using</span> <span class="Keywords">namespace</span> <span class="GeneNmSpace">std</span>;
+<span class="Identifier">#define</span> <span class="Macro">TEST__</span> <span class="Number">123</span>
+
+<span class="Keywords">enum</span> <span class="Keywords">class</span> hoge{
+  enum_1 : <span class="Number">1</span>,
+  enum_2 : <span class="Number">2</span>,
+  enum_3 : <span class="Number">3</span>
+};
+
+
+<span class="Keywords">struct</span> huga{
+<span class="GeneNmSpace">std</span>::vector&lt;<span class="GeneNmSpace">std</span>::vector&lt;<span class="Keywords">int</span>&gt;&gt; vec1;
+<span class="GeneNmSpace">std</span>::string str1;
+
+  <span class="Keywords">int</span> test(){
+    <span class="GeneFunc">printf</span>(<span class="String">"Hello, World!!"</span>); <span class="Com_1">// This is comment</span>
+    <span class="Com_2">/*  
+    Comment 1
+    Comment 2
+    Comment 3
+    */</span>
+  <span class="Keywords">return</span> <span class="Number">0</span>;
+  }
+}
+
+
+<span class="Keywords">int</span> main(){
+  cout &lt;&lt; <span class="String">"Hello world."</span> &lt;&lt; endl;
+  <span class="Keywords">return</span> <span class="Number">0</span>;
+}</pre>
+
+
+    </div></div>
+    <p>ここにHTMLファイルが表示されます</p>
+</body>
+
+<style type="text/css">
+    body{
+        background-color:#333;
+    }
+    p{
+        color:#fff;
+    }
+    
+    .program_main, .L_Number{
+        overflow-y: hidden;
+        height: 100px;
+        font-size:14px;
+        font-weight:normal;
+        line-height:16px;
+        margin-top:0px;
+        margin-bottom:38px;
+    }
+    
+
+    .program_main{
+        padding-left:5px;
+        margin-left:0px;
+        width:auto;
+        background-color:#000;
+        overflow-x:scroll;
+        border-top:solid 1.5px #fff;
+        border-right:solid 1.5px #fff;
+        border-bottom:solid 1.5px #fff;
+        color:#fff;
+    }
+
+    .L_Number{ 
+        width:30px;
+        background-color:#000;
+        float:left;
+        text-align:right;
+        text-underline-position:below;
+        text-decoration:none;
+        padding-right:2px;
+        border-right:solid 0.5px #ccc;
+
+        border-bottom:solid 1.5px #fff;
+        border-top:solid 1.5px #fff;
+        border-left:solid 1.5px #fff;
+        
+        color:#fff;
+    }
+
+   .pro_lang{
+        color:#fff;
+        background-color:#222;
+        border-top:solid 4px yellow;
+        height:20px;
+        padding:3px;
+        width:70px;
+   } 
+   
+.program{
+    position:relative;
+}
+.grad-btn {
+  position: absolute;
+  bottom:-30px;
+  width: 100%;
+  height:30px;
+  background:#244d89;
+  color: #fff;
+  font-size: 18px;
+  font-weight:bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grad-btn::before {
+  content: "続きを読む"
+}
+
+.program_main::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px; 
+  content: "";
+}
+
+.grad-trigger {
+  display: none; 
+}
+
+.grad-trigger:checked ~ .grad-btn::before {
+  content: "閉じる" 
+}
+.grad-trigger:checked ~ .program_main,
+.grad-trigger:checked ~ .L_Number {
+  height: auto; 
+}
+.grad-trigger:checked ~ .program_main::before,
+.grad-trigger:checked ~ .L_Number::before{
+  display: none; 
+}
+
+.Number{ color:#ff6a00; }
+.Com_1{ color:#32ff2e; }
+.Com_2{ color:#19edfb; }
+.String{ color:#d7ba7d; }
+.Win32_API{ color:#d066ea; }
+.Keywords{ color:#569cd6; }
+.Identifier{ color:#aaa; }
+.GeneFunc{ color:yellow; }
+.GeneNmSpace{ color:#569cd6; }
+.Macro{ color:#ff2a7e; }
+
+
+</style>
+
+</html>
